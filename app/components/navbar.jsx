@@ -82,10 +82,28 @@ const Navbar = () => {
             >
               About Us
             </a>
-            <a className="mr-6 hover:text-green-300 cursor-pointer">Features</a>
-            <a className="mr-6 hover:text-green-300 cursor-pointer">Pricing</a>
-            <a className="mr-6 hover:text-green-300 cursor-pointer">FAQs</a>
-            <a className="mr-6 hover:text-green-300 cursor-pointer">
+            <a
+              className="mr-6 hover:text-green-300 cursor-pointer"
+              href="/pages/feature"
+            >
+              Features
+            </a>
+            <a
+              className="mr-6 hover:text-green-300 cursor-pointer"
+              href="/pages/pricing"
+            >
+              Pricing
+            </a>
+            <a
+              className="mr-6 hover:text-green-300 cursor-pointer"
+              href="/pages/faqs"
+            >
+              FAQs
+            </a>
+            <a
+              className="mr-6 hover:text-green-300 cursor-pointer"
+              href="/pages/contact"
+            >
               Contact Us
             </a>
           </nav>

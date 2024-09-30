@@ -61,7 +61,7 @@ const Page = () => {
               {/* Resend OTP */}
               <div className="text-center">
                 <p className="text-sm font-light dark:text-gray-400 text-white">
-                  Didn't receive the OTP?{" "}
+                  Didn&apos;t receive the OTP?{" "}
                   <a
                     href="#"
                     className="font-medium text-primary-600 hover:underline dark:text-primary-500"

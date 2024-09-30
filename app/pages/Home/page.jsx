@@ -9,6 +9,27 @@ import third from "../../images/33.png";
 import fourth from "../../images/44.png";
 import five from "../../images/55.png";
 const Page = () => {
+  const people = [
+    {
+      name: "Leslie Alexander",
+      role: "Co-Founder / CEO",
+      imageUrl:
+        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    },
+    {
+      name: "Instant Legal Consultation",
+      role: "Get real-time legal advice from our AI lawyer 24/7. No need to wait for appointments—just ask your question and receive instant guidance tailored to your specific situation.",
+      imageUrl:
+        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    },
+    {
+      name: "Emily Thompson",
+      role: "Co-Founder / CTO",
+      imageUrl:
+        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    },
+  ];
+
   return (
     <div>
       <Navbar />
@@ -54,7 +75,7 @@ const Page = () => {
             <h2 className="text-center text-lg font-semibold leading-8 ">
               Trusted by the world’s most innovative teams
             </h2>
-            <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5 w-[80%] m-auto">
+            <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
               <Image
                 alt="Transistor"
                 src={first}
@@ -97,13 +118,42 @@ const Page = () => {
 
       <div className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <h2 className="text-center text-lg font-semibold leading-8 text-gray-900">
+          <h2 className="text-center font-bold leading-8 text-gray-900 text-2xl">
             Everything You Are Looking For
           </h2>
-          <p className="text-center text-lg font-semibold leading-8 text-gray-900 W-[50%]">
+          <p className="text-center text-lg font-medium leading-8 text-gray-900 mt-4">
             Explore features that boost your productivity. From document
-            automation to advanced research, we've got the hard work covered.
+            automation to advanced research, we&apos;ve got the hard work
+            covered.
           </p>
+        </div>
+      </div>
+
+      <div className="bg-white py-24 sm:py-32">
+        <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
+          <ul
+            role="list"
+            className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2"
+          >
+            {people.map((person) => (
+              <div
+                class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+                key={person.name}
+              >
+                <a href="#">hiiiiii</a>
+                <div class="p-5">
+                  <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                      {person.name}
+                    </h5>
+                  </a>
+                  <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    {person.role}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </ul>
         </div>
       </div>
     </div>

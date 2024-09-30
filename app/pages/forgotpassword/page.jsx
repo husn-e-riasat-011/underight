@@ -9,9 +9,9 @@ const Page = () => {
   return (
     <>
       <Navbar />
-      <section class="text-gray-600 body-font overflow-hidden my-24">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-wrap justify-center items-center">
+      <section className="text-gray-600 body-font overflow-hidden my-24">
+        <div className="container px-5 py-24 mx-auto">
+          <div className="flex flex-wrap justify-center items-center">
             <Sideherosection />
             <div className="px-12 md:w-1/2 flex flex-col items-start">
               <div className="w-full bg-black text-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md dark:bg-gray-800 dark:border-gray-700 m-10 pt-10">
@@ -27,7 +27,7 @@ const Page = () => {
                     Reset Your Password
                   </h1>
                   <p className="text-sm font-light text-center dark:text-gray-400 text-white">
-                    Enter your email address below, and we'll send you
+                    Enter your email address below, and we&apos;s send you
                     instructions on how to reset your password.
                   </p>
                   <form className="space-y-4 md:space-y-6" action="#">

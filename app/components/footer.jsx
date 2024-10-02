@@ -3,7 +3,7 @@ import Image from "next/image";
 import logo from "../images/logo.png";
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-8">
+    <footer className="bg-gradient-to-b from-black to-gray-800   text-white py-8">
       <div class="sm:flex sm:items-center sm:justify-between w-[80%] m-auto">
         <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
           <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -95,7 +95,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="bg-black text-white py-8">
+      <div className=" text-white py-8">
         <div className="container mx-auto">
           <div className="flex flex-wrap md:flex-row justify-evenly text-center md:text-left">
             {/* Column 1 */}

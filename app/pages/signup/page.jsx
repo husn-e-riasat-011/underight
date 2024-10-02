@@ -12,7 +12,7 @@ const Page = () => {
       <Navbar />
       <section class="text-gray-600 body-font overflow-hidden my-24">
         <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-wrap justify-center items-center">
+          <div class="flex flex-wrap-reverse justify-center items-center">
             <Sideherosection />
             <div className="px-12 md:w-1/2 flex flex-col items-start">
               <div className="w-full bg-black text-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md dark:bg-gray-800 dark:border-gray-700 m-10 pt-10">

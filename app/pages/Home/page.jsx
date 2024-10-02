@@ -9,9 +9,9 @@ import five from "../../images/55.png";
 import iconfirst from "../../images/icon1.png";
 import iconsecond from "../../images/icon2.png";
 import iconthird from "../../images/icon3.png";
-
 import ArticalCards from "@/app/components/articalCards";
 import Shakehand from "@/app/components/shakehand";
+import PricingCards from "@/app/components/pricingCards";
 const Page = () => {
   return (
     <div>
@@ -19,7 +19,7 @@ const Page = () => {
 
       {/* Hero section */}
 
-      <div className="bg-black  w-full flex flex-col items-center justify-center text-white relative pt-40  rounded-2xl">
+      <div className="bg-gradient-to-b from-black to-gray-800  w-full flex flex-col items-center justify-center text-white relative pt-40 rounded-b-2xl">
         <div>
           <h1 className="font-bold my-4 leading-7 text-center text-4xl tracking-wide">
             Welcome to the
@@ -52,13 +52,17 @@ const Page = () => {
           </div>
 
           <div className="flex justify-center items-center ">
-            <button className="p-1 mr-1 border rounded">Get Started</button>
-            <button className="border p-1 ml-1 rounded">How It Works</button>
+            <button className="p-1 mr-1 border rounded hover:bg-gray-500 text-white text-opacity-80 transition duration-300">
+              Get Started
+            </button>
+            <button className="border p-1 ml-1 rounded hover:bg-gray-500  text-white text-opacity-80 transition duration-300 ">
+              How It Works
+            </button>
           </div>
         </section>
-        <div className="bg-black py-14 text-white">
+        <div className=" py-14 my-6">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <h2 className="text-center text-lg font-semibold leading-8 ">
+            <h2 className="text-center mb-3 text-lg font-semibold leading-8 text-white text-opacity-80">
               Trusted by the world’s most innovative teams
             </h2>
             <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
@@ -108,7 +112,7 @@ const Page = () => {
 
       {/* how it work */}
 
-      <div className="bg-black w-[90%] mx-auto rounded-2xl mt-10 pb-10">
+      <div className="bg-gradient-to-b from-black to-gray-800 w-[90%] mx-auto rounded-2xl mt-10 pb-10">
         <div className=" py-10 sm:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <h2 className="text-center font-bold leading-8 text-white text-2xl w-[50%] m-auto">
@@ -185,8 +189,10 @@ const Page = () => {
         </section>
       </div>
 
-      {/* its new thing */}
+      {/* shakehand*/}
       <Shakehand />
+      {/* pricing cards */}
+      <PricingCards />
     </div>
   );
 };

@@ -13,7 +13,7 @@ export default function Home() {
         <div class="container px-5 py-24 mx-auto">
           <div class="flex flex-wrap justify-center items-center">
             <Sideherosection />
-            <div class="px-12 md:w-1/2 flex flex-col items-start">
+            <div class="p-12 md:w-1/2 flex flex-col items-start">
               <div class="w-full bg-black text-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md  dark:bg-gray-800 dark:border-gray-700 m-10 pt-10">
                 <a
                   href="/"

@@ -2,7 +2,7 @@ import React from "react";
 
 const PricingCards = () => {
   return (
-    <section class="text-gray-600 body-font overflow-hidden bg-gradient-to-b from-black to-gray-800 w-[96%] m-auto rounded-2xl">
+    <section class="text-gray-600 body-font overflow-hidden bg-gradient-to-b from-black to-gray-800 w-[94%] m-auto rounded-2xl">
       <div class="container px-5 py-24 mx-auto">
         <div class="flex justify-between items-center monthly mb-20 w-[90%] m-auto">
           <div>

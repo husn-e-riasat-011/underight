@@ -5,6 +5,10 @@ import Image from "next/image";
 import React from "react";
 import imageone from "../../images/icon1.png";
 
+import Videocomponent from "@/app/components/videocomponent";
+import Footer from "@/app/components/footer";
+import Betterway from "@/app/components/betterway";
+
 const Page = () => {
   return (
     <div>
@@ -22,8 +26,7 @@ const Page = () => {
         </div>
       </nav>
       <ArticalCards />
-
-      <section class="text-white body-font overflow-hidden bg-gradient-to-b from-black to-gray-800 w-[95%] m-auto rounded-2xl">
+      <section class="text-white body-font overflow-hidden bg-gradient-to-b from-black to-gray-800 w-[94%] m-auto rounded-2xl">
         <div class="px-5 py-24 mx-auto w-[90%]">
           <div class="flex wrp justify-center items-center">
             <div class="p-4">
@@ -102,7 +105,7 @@ const Page = () => {
           </div>
         </div>
       </section>
-
+      {/* Benefits */}
       <div className="bg-white py-18">
         <div className="bg-white py-24 sm:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -221,6 +224,12 @@ const Page = () => {
           </div>
         </div>
       </div>
+      {/* a better way to work */}
+      <Betterway />
+      {/* video section */}
+      <Videocomponent />
+      {/* footer section */}
+      <Footer />
     </div>
   );
 };

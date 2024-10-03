@@ -12,6 +12,13 @@ import iconthird from "../../images/icon3.png";
 import ArticalCards from "@/app/components/articalCards";
 import Shakehand from "@/app/components/shakehand";
 import PricingCards from "@/app/components/pricingCards";
+import Videocomponent from "@/app/components/videocomponent";
+import Betterway from "@/app/components/betterway";
+import Footer from "@/app/components/footer";
+import cooma from "../../images/cooma.png";
+import happy from "../../images/happyfemale.png";
+import Tfirst from "../../images/t-21.png";
+import Tsecond from "../../images/t-51.png";
 const Page = () => {
   return (
     <div>
@@ -193,6 +200,154 @@ const Page = () => {
       <Shakehand />
       {/* pricing cards */}
       <PricingCards />
+      {/* videocomponent */}
+      <Videocomponent />
+      {/* betterway section */}
+      <Betterway />
+      {/* client section */}
+      <div className="bg-white py-18">
+        <div className="bg-white py-24 sm:py-32">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <h2 className="text-center font-bold leading-8 text-gray-900 text-2xl w-[50%] m-auto">
+              See What are Clients are Saying
+            </h2>
+            <p className="text-center text-lg font-medium leading-8 text-gray-900 mt-4 w-[60%] m-auto">
+              Here what some of our clients say about our platform.
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-wrap justify-center items-center gap-6">
+          {/* first card */}
+          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center">
+            <a href="#" className="mt-10">
+              <Image src={cooma} width={100} height={100} alt="" />
+            </a>
+            <div class="p-5 text-center">
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                “The AI lawyer helped me draft a contract in minutes, saving me
+                hours of work. I can not believe how easy it was to use. Highly
+                recommend it to any small business owner!”
+              </p>
+            </div>
+            <a href="#">
+              <Image
+                src={Tfirst}
+                width={70}
+                height={70}
+                className="rounded-full"
+                alt="pic"
+              />
+            </a>
+            <h1 className="font-medium leading-3 text-[#313131] mt-3 mb-1">
+              Sarah M
+            </h1>
+            <p className="text-[#A6A6A6] leading-3 font-normal mb-10 mt-1">
+              Small Business Owner
+            </p>
+          </div>
+          {/* second one */}
+          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center">
+            <a href="#" className="mt-10">
+              <Image src={cooma} width={100} height={100} alt="" />
+            </a>
+            <div class="p-5 text-center">
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                “I was skeptical at first, but the AI provided spot-on legal
+                advice for my case. It was like having a lawyer on call 24/7.
+                The best part? It is way more affordable than traditional.”
+              </p>
+            </div>
+            <a href="#">
+              <Image
+                src={Tsecond}
+                width={70}
+                height={70}
+                className="rounded-full"
+                alt="pic"
+              />
+            </a>
+            <h1 className="font-medium leading-3 text-[#313131] mt-3 mb-1">
+              John D
+            </h1>
+            <p className="text-[#A6A6A6] leading-3 font-normal mb-10 mt-1">
+              Freelancer
+            </p>
+          </div>
+          {/* third one */}
+          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center">
+            <a href="#" className="mt-10">
+              <Image src={cooma} width={100} height={100} alt="" />
+            </a>
+            <div class="p-5 text-center">
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                “As a startup founder, I often need quick legal insights. The AI
+                lawyer has been a game-changer for us. It is like having an
+                in-house legal team without the overhead.”
+              </p>
+            </div>
+            <a href="#">
+              <Image
+                src={happy}
+                width={70}
+                height={70}
+                className="rounded-full"
+                alt="pic"
+              />
+            </a>
+            <h1 className="font-medium leading-3 text-[#313131] mt-3 mb-1">
+              Emily R
+            </h1>
+            <p className="text-[#A6A6A6] leading-3 font-normal mb-10 mt-1">
+              Startup Founder
+            </p>
+          </div>
+        </div>
+
+        {/* Learn more buttoon */}
+
+        <div className="flex justify-center items-center m-20 space-x-4">
+          {/* Backward Button */}
+          <button className="bg-gray-300 text-white px-4 py-2 rounded hover:bg-gray-500 transition duration-300 flex items-center">
+            {/* Backward Arrow */}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5 mr-2"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+          </button>
+
+          {/* Forward Button */}
+          <button className="bg-gray-300 text-white px-4 py-2 rounded hover:bg-gray-500 transition duration-300 flex items-center">
+            {/* Forward Arrow */}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5 ml-2"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      {/* footer section */}
+      <Footer />
     </div>
   );
 };

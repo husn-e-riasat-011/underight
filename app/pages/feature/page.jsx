@@ -20,9 +20,7 @@ const Page = () => {
           </Link>
           <span className="border-l border-black h-6"></span>{" "}
           {/* Line between links */}
-          <a href="#about" className="text-gray-400">
-            Features
-          </a>
+          <span className="text-gray-400">Features</span>
         </div>
       </nav>
       <ArticalCards />

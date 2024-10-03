@@ -43,3 +43,9 @@
     display: none;
   }
 }
+@media screen and (max-width: 1295px) {
+.marg {
+    margin-bottom: 100px;
+  }
+}
+

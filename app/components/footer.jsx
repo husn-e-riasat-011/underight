@@ -3,7 +3,13 @@ import Image from "next/image";
 import logo from "../images/logo.png";
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-b from-black to-gray-800   text-white py-8">
+    <footer
+      className="w-[94%] m-auto rounded-2xl text-white py-8 my-6"
+      style={{
+        background:
+          "radial-gradient(100% 100% at 52.08% 100%, #363636 0%, #141414 43.58%, #050505 100%)",
+      }}
+    >
       <div class="sm:flex sm:items-center sm:justify-between w-[80%] m-auto">
         <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
           <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -18,7 +24,7 @@ const Footer = () => {
         <div class="flex mt-4 sm:justify-center sm:mt-0">
           <a
             href="#"
-            class="text-gray-500 hover:text-green-600 border border-gray-400 p-1 dark:hover:text-white"
+            class="text-gray-500 hover:text-[#55F4EA] border border-gray-400 p-1 dark:hover:text-white"
           >
             <svg
               class="w-4 h-4"
@@ -37,7 +43,7 @@ const Footer = () => {
           </a>
           <a
             href="#"
-            class="text-gray-500 hover:text-green-600 border border-gray-400 p-1 dark:hover:text-white ms-5"
+            class="text-gray-500 hover:text-[#55F4EA] border border-gray-400 p-1 dark:hover:text-white ms-5"
           >
             <svg
               class="w-4 h-4"
@@ -56,7 +62,7 @@ const Footer = () => {
           </a>
           <a
             href="#"
-            class="text-gray-500 hover:text-green-600 border border-gray-400 p-1 dark:hover:text-white ms-5"
+            class="text-gray-500 hover:text-[#55F4EA] border border-gray-400 p-1 dark:hover:text-white ms-5"
           >
             <svg
               class="w-4 h-4"
@@ -75,7 +81,7 @@ const Footer = () => {
           </a>
           <a
             href="#"
-            class="text-gray-500 hover:text-green-600 border border-gray-400 p-1 dark:hover:text-white ms-5"
+            class="text-gray-500 hover:text-[#55F4EA] border border-gray-400 p-1 dark:hover:text-white ms-5"
           >
             <svg
               class="w-4 h-4"
@@ -231,7 +237,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8 w-[80%] m-auto" />
 
       <p className="text-center text-white">
         © Copyright 2024 UndrRight. All Rights Reserved. Design by Single

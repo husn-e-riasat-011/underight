@@ -14,8 +14,8 @@ const Navbar = () => {
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <Image
             src={logo}
-            width={130}
-            height={130}
+            width={150}
+            height={150}
             alt="Picture of the author"
           />
         </a>
@@ -71,37 +71,37 @@ const Navbar = () => {
         >
           <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center ml-5">
             <a
-              className="mr-6 hover:text-gray-400 cursor-pointer"
+              className="mr-10 hover:text-[#55F4EA] cursor-pointer"
               href="/pages/Home"
             >
               Home
             </a>
             <a
-              className="mr-6 hover:text-gray-400 cursor-pointer"
+              className="mr-10 hover:text-[#55F4EA] cursor-pointer"
               href="/pages/about"
             >
               About Us
             </a>
             <a
-              className="mr-6 hover:text-gray-400 cursor-pointer"
+              className="mr-10 hover:text-[#55F4EA] cursor-pointer"
               href="/pages/feature"
             >
               Features
             </a>
             <a
-              className="mr-6 hover:text-gray-400 cursor-pointer"
+              className="mr-10 hover:text-[#55F4EA] focus-within:text-[#55F4EA] cursor-pointer"
               href="/pages/pricing"
             >
               Pricing
             </a>
             <a
-              className="mr-6 hover:text-gray-400 cursor-pointer"
+              className="mr-10 hover:text-[#55F4EA] focus:text-[#55F4EA] cursor-pointer"
               href="/pages/faqs"
             >
               FAQs
             </a>
             <a
-              className="mr-6 hover:text-gray-400 cursor-pointer"
+              className="mr-10 hover:text-[#55F4EA] focus:text-[#55F4EA] cursor-pointer"
               href="/pages/contact"
             >
               Contact Us

@@ -2,10 +2,29 @@ import React from "react";
 
 const PricingCards = () => {
   return (
-    <section class="text-gray-600 body-font overflow-hidden bg-gradient-to-b from-black to-gray-800 w-[94%] m-auto rounded-2xl">
+    <section
+      class="text-gray-600 body-font overflow-hidden w-[94%] m-auto rounded-2xl"
+      style={{
+        background:
+          "radial-gradient(100% 100% at 52.08% 100%, #363636 0%, #141414 43.58%, #050505 100%)",
+      }}
+    >
       <div class="container px-5 py-24 mx-auto">
         <div class="flex justify-between items-center monthly mb-20 w-[90%] m-auto">
           <div>
+            <div class="w-24 mb-2 border border-[#5E5E5E] flex items-center justify-center bg-[#2F2F31] rounded-xl py-2 space-x-2">
+              {/* <!-- Icon --> */}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 text-[#FFFFFF]"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path d="M12 2C10.35 2 9 3.35 9 5H5C3.35 5 2 6.35 2 8V19C2 20.65 3.35 22 5 22H19C20.65 22 22 20.65 22 19V8C22 6.35 20.65 5 19 5H15C15 3.35 13.65 2 12 2ZM12 4C12.55 4 13 4.45 13 5H11C11 4.45 11.45 4 12 4ZM5 7H19C19.55 7 20 7.45 20 8V19C20 19.55 19.55 20 19 20H5C4.45 20 4 19.55 4 19V8C4 7.45 4.45 7 5 7ZM7 9V17H17V9H7Z" />
+              </svg>
+              {/* <!-- Text --> */}
+              <span class="text-[#FFFFFF]">Pricing</span>
+            </div>
             <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-white text-opacity-80">
               Simple and Flexible Pricing
             </h1>
@@ -28,7 +47,7 @@ const PricingCards = () => {
         {/* pricing Cards */}
         <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
           <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 rounded-lg xl:p-8 dark:bg-gray-800 dark:text-white">
-            <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden text-[#A3A1A1] bg-[#2F2F31]">
+            <div class="h-full p-6 rounded-lg border-2 border-[#5E5E5E] flex flex-col relative overflow-hidden text-[#A3A1A1] bg-[#2F2F31]">
               <h2 class=" tracking-widest title-font mb-1 font-medium text-left text-xl">
                 Basic Plan
               </h2>
@@ -162,7 +181,7 @@ const PricingCards = () => {
             </div>
           </div>
           <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 rounded-lg xl:p-8 dark:bg-gray-800 dark:text-white">
-            <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden text-[#A3A1A1] bg-[#2F2F31]">
+            <div class="h-full p-6 rounded-lg border-2 border-[#5E5E5E] flex flex-col relative overflow-hidden text-[#A3A1A1] bg-[#2F2F31]">
               <h2 class="tracking-widest title-font mb-1 font-medium text-left text-xl">
                 Business Paln
               </h2>

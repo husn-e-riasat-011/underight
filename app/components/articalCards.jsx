@@ -11,10 +11,26 @@ const ArticalCards = () => {
       <div className="bg-white py-18">
         <div className="bg-white py-24 sm:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <h2 className="text-center font-bold leading-8 text-gray-900 text-2xl w-[50%] m-auto">
+            <div class="flex items-center justify-center my-4">
+              <div className="w-32 flex items-center justify-center border border-gray-300 rounded-xl py-2 space-x-2">
+                {/* <!-- Icon --> */}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 text-gray-600"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 11H9v2H8v-2H6v-1h2V8H7V7h1V6h1v1h2v1H9v3h2v1z" />
+                </svg>
+                {/* <!-- Text --> */}
+                <span class="text-gray-600">Features</span>
+              </div>
+            </div>
+
+            <h2 className="text-center font-bold leading-8 text-[#000000] text-2xl w-[50%] m-auto">
               Everything You Are Looking For
             </h2>
-            <p className="text-center text-lg font-medium leading-8 text-gray-900 mt-4 w-[60%] m-auto">
+            <p className="text-center text-lg font-medium leading-8 text-[#535353] mt-4 w-[60%] m-auto">
               Explore features that boost your productivity. From document
               automation to advanced research, we have got the hard work
               covered.
@@ -23,10 +39,10 @@ const ArticalCards = () => {
         </div>
         <div className="flex flex-wrap justify-center items-center gap-6">
           {/* first card */}
-          <div class="max-w-sm bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-              <Image src={eleven} alt="pic" />
-            </a>
+          <div class="max-w-sm bg-white">
+            <div className="border border-[#ACACAC] rounded-2xl">
+              <Image src={eleven} alt="pic" className="p-1 " />
+            </div>
             <div class="p-5">
               <div className="flex gap-2 items-center">
                 <FaPersonBiking />
@@ -42,10 +58,10 @@ const ArticalCards = () => {
             </div>
           </div>
           {/* second one */}
-          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-              <Image src={Twelve} alt="" />
-            </a>
+          <div class="max-w-sm bg-white">
+            <div className="border border-[#ACACAC] rounded-2xl">
+              <Image src={Twelve} alt="" className="p-1" />
+            </div>
             <div class="p-5">
               <div className="flex gap-2 items-center">
                 <FaPersonBurst />
@@ -61,10 +77,10 @@ const ArticalCards = () => {
             </div>
           </div>
           {/* third one */}
-          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-              <Image src={Thirteen} alt="" />
-            </a>
+          <div class="max-w-sm bg-white">
+            <div className="border border-[#ACACAC] rounded-2xl">
+              <Image src={Thirteen} alt="" className="p-1 rounded-xl" />
+            </div>
             <div class="p-5">
               <div className="flex gap-2 items-center">
                 <FaPersonBurst />
@@ -80,10 +96,10 @@ const ArticalCards = () => {
             </div>
           </div>
           {/* forth */}
-          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-              <Image src={Twelve} alt="" />
-            </a>
+          <div class="max-w-sm bg-white">
+            <div className="border border-[#ACACAC] rounded-2xl">
+              <Image src={Twelve} alt="" className="p-1" />
+            </div>
             <div class="p-5">
               <div className="flex gap-2 items-center">
                 <FaPersonBurst />
@@ -99,10 +115,10 @@ const ArticalCards = () => {
             </div>
           </div>
           {/* fiveth */}
-          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-              <Image src={Thirteen} alt="" />
-            </a>
+          <div class="max-w-sm bg-white">
+            <div className="border border-[#ACACAC] rounded-2xl">
+              <Image src={Thirteen} alt="" className="p-1 rounded-xl" />
+            </div>
             <div class="p-5">
               <div className="flex gap-2 items-center">
                 <FaPersonBurst />
@@ -118,10 +134,10 @@ const ArticalCards = () => {
             </div>
           </div>
           {/* 6th */}
-          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-              <Image src={Sixteen} alt="" />
-            </a>
+          <div class="max-w-sm bg-white">
+            <div className="border border-[#ACACAC] rounded-2xl">
+              <Image src={Sixteen} alt="" className="p-1" />
+            </div>
             <div class="p-5">
               <div className="flex gap-2 items-center">
                 <FaPersonBurst />
@@ -140,7 +156,7 @@ const ArticalCards = () => {
 
         {/* Learn more buttoon */}
 
-        <div className="flex justify-center items-center m-10">
+        <div className="flex justify-center items-center m-10 py-10">
           <button className="bg-gray-300 text-white px-4 py-2 rounded hover:bg-gray-500 transition duration-300">
             Learn More
           </button>

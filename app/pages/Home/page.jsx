@@ -19,36 +19,42 @@ import cooma from "../../images/cooma.png";
 import happy from "../../images/happyfemale.png";
 import Tfirst from "../../images/t-21.png";
 import Tsecond from "../../images/t-51.png";
+import left from "../../images/left.png";
+import right from "../../images/right.png";
 const Page = () => {
   return (
     <div>
       <Navbar />
-
       {/* Hero section */}
-
-      <div className="bg-gradient-to-b from-black to-gray-800  w-full flex flex-col items-center justify-center text-white relative pt-40 rounded-b-2xl">
-        <div>
-          <h1 className="font-bold my-4 leading-7 text-center text-4xl tracking-wide">
+      <div
+        className="w-full flex flex-col items-center justify-center text-white relative pt-40 rounded-b-2xl"
+        style={{
+          background:
+            "radial-gradient(100% 100% at 52.08% 100%, #363636 0%, #141414 43.58%, #050505 100%)",
+        }}
+      >
+        <div className="mt-10">
+          <h1 className="font-sans text-[60px] font-bold leading-[89px] tracking-[0.4px] text-center text-[#FFFFFF]">
             Welcome to the
-            <span className="text-green-300"> UndrRight</span>{" "}
+            <span className="text-[#55F4EA]"> UndrRight</span>{" "}
           </h1>
-          <h3 className="font-normal leading-5 text-center text-2xl tracking-wide">
+          <h3 className="font-sans text-[30px] font-bold leading-[59px] tracking-[0.1px] text-center text-[#FFFFFF]">
             your personal legal AI Assistant{" "}
           </h3>
         </div>
         <section className="text-gray-600 body-font w-[80%] m-auto">
           <div className="container flex flex-wrap px-5 py-20 mx-auto items-center">
-            <div className="md:w-1/2 md:pr-12 md:py-8 md:border-r md:border-b-0 mb-10 md:mb-0 border-b border-gray-200 text-center text-white">
-              <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-green-300">
+            <div className="md:w-1/2 md:pr-12 md:py-8 md:border-r-2 md:border-b-0 mb-10 md:mb-0 border-b-2 border-white text-center text-white">
+              <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-[#55F4EA]">
                 For Consumers
               </h1>
-              <p className="leading-relaxed text-base">
+              <p className="leading-relaxed text-base text-[#FFFFFF]">
                 Say goodbye to expensive legal consultation, long waits for
                 appointments, and confusing legal texts
               </p>
             </div>
             <div className="flex flex-col md:w-1/2 md:pl-12 text-center text-white">
-              <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-green-300">
+              <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-[#55F4EA]">
                 For Lawyers
               </h1>
               <p className="leading-relaxed text-base">
@@ -59,69 +65,117 @@ const Page = () => {
           </div>
 
           <div className="flex justify-center items-center ">
-            <button className="p-1 mr-1 border rounded hover:bg-gray-500 text-white text-opacity-80 transition duration-300">
+            <button className="border border-[#5E5E5E] rounded-xl bg-[#1B1B1C] px-3 py-1 text-[#FFFFFF]">
               Get Started
             </button>
-            <button className="border p-1 ml-1 rounded hover:bg-gray-500  text-white text-opacity-80 transition duration-300 ">
+            <button className="border border-[#5E5E5E] rounded-xl bg-[#1B1B1C] px-3 py-1 text-[#FFFFFF] ml-2 ">
               How It Works
             </button>
           </div>
         </section>
-        <div className=" py-14 my-6">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <h2 className="text-center mb-3 text-lg font-semibold leading-8 text-white text-opacity-80">
-              Trusted by the world’s most innovative teams
+        <div className=" py-6 my-16">
+          <div className="mx-auto px-6 lg:px-8">
+            <h2 className=" mb-4 text-lg font-sans text-[40px] font-bold leading-[89px] tracking-[0.4px] text-center text-[#FFFFFF]">
+              As Featured In
             </h2>
-            <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-              <Image
-                alt="Transistor"
-                src={first}
-                width={158}
-                height={48}
-                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-              />
-              <Image
-                alt="Transistor"
-                src={second}
-                width={158}
-                height={48}
-                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-              />
-              <Image
-                alt="Transistor"
-                src={fourth}
-                width={158}
-                height={48}
-                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-              />
-              <Image
-                alt="Transistor"
-                src={five}
-                width={158}
-                height={48}
-                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-              />
-              <Image
-                alt="Transistor"
-                src={third}
-                width={158}
-                height={48}
-                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-              />
+            <div className=" bg-[#A3A3A3] p-5 flex items-center gap-x-8 gap-y-10 justify-items-center rounded-xl  w-full relative ">
+              <div className=" flex justify-center">
+                <Image
+                  alt="Transistor"
+                  src={left}
+                  width={130} // Fixed width
+                  height={30} // Fixed height
+                  className="h-8 w-[80px] object-contain" // Fixed height with object containment
+                />
+              </div>
+              <div className="border-r border-black pr-4 last:border-r-0 flex justify-center">
+                <Image
+                  alt="Transistor"
+                  src={first}
+                  width={130} // Fixed width
+                  height={30} // Fixed height
+                  className="h-8 w-[130px] object-contain" // Fixed height with object containment
+                />
+              </div>
+              <div className="border-r border-black pr-4 last:border-r-0 flex justify-center">
+                <Image
+                  alt="Transistor"
+                  src={second}
+                  width={130} // Fixed width
+                  height={30} // Fixed height
+                  className="h-8 w-[130px] object-contain" // Fixed height with object containment
+                />
+              </div>
+              <div className="border-r border-black pr-4 last:border-r-0 flex justify-center">
+                <Image
+                  alt="Transistor"
+                  src={third}
+                  width={130} // Fixed width
+                  height={30} // Fixed height
+                  className="h-8 w-[130px] object-contain" // Fixed height with object containment
+                />
+              </div>
+              <div className="border-r border-black pr-4 last:border-r-0 flex justify-center">
+                <Image
+                  alt="Transistor"
+                  src={fourth}
+                  width={130} // Fixed width
+                  height={30} // Fixed height
+                  className="h-8 w-[130px] object-contain" // Fixed height with object containment
+                />
+              </div>
+              <div className=" last:border-r-0 flex justify-center">
+                <Image
+                  alt="Transistor"
+                  src={five}
+                  width={130} // Fixed width
+                  height={30} // Fixed height
+                  className="h-8 w-[130px] object-contain" // Fixed height with object containment
+                />
+              </div>
+
+              <div className=" flex justify-center">
+                <Image
+                  alt="Transistor"
+                  src={right}
+                  width={130} // Fixed width
+                  height={30} // Fixed height
+                  className="h-8 w-[80px] object-contain" // Fixed height with object containment
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
-
       {/* Artical cards section */}
-
       <ArticalCards />
-
       {/* how it work */}
-
-      <div className="bg-gradient-to-b from-black to-gray-800 w-[90%] mx-auto rounded-2xl mt-10 pb-10">
+      <div
+        className="w-[90%] mx-auto rounded-2xl mt-10 pb-10"
+        style={{
+          background:
+            "radial-gradient(100% 100% at 52.08% 100%, #363636 0%, #141414 43.58%, #050505 100%)",
+        }}
+      >
         <div className=" py-10 sm:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="flex items-center justify-center my-4">
+              <div class="w-36 border border-[#5E5E5E] flex items-center justify-center bg-[#2F2F31] rounded-xl py-2 space-x-2">
+                {/* <!-- Icon --> */}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 text-[#FFFFFF]"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path d="M17.414 2.586a2 2 0 00-2.828 0l-9.172 9.172a2 2 0 00-.586 1.414V15a1 1 0 001 1h1.828a2 2 0 001.414-.586l9.172-9.172a2 2 0 000-2.828l-1.828-1.828zM15.586 4L14 5.586 12.414 4 14 2.414 15.586 4zM11 7.414L8.586 10H8v-.586L10.586 7H11V7.414z" />
+                  <path d="M5 16H4v-1l1-1h1v1H5v1z" />
+                </svg>
+                {/* <!-- Text --> */}
+                <span class="text-[#FFFFFF]">How it works</span>
+              </div>
+            </div>
+
             <h2 className="text-center font-bold leading-8 text-white text-2xl w-[50%] m-auto">
               Navigating the legal landscape is simple with our AI-powered
               platform
@@ -136,7 +190,7 @@ const Page = () => {
         <section class="text-[#CECECE] body-font">
           <div class="container px-5  mx-auto flex flex-wrap">
             <div class="lg:w-2/3 mx-auto">
-              <div className="flex flex-wrap w-full bg-[#2F2F31] rounded-xl py-32 px-10 relative mb-4">
+              <div className="flex flex-wrap w-full bg-[#2F2F31] border border-[#5E5E5E] rounded-xl py-32 px-10 relative mb-4">
                 <div className="text-center relative z-10 w-full">
                   <Image
                     src={iconfirst}
@@ -157,7 +211,7 @@ const Page = () => {
 
               <div class="flex flex-wrap -mx-2">
                 <div class="px-2 w-1/2">
-                  <div className="text-center  z-10 flex flex-wrap w-full bg-[#2F2F31] rounded-2xl sm:py-24 py-16 sm:px-10 px-6 relative ">
+                  <div className="text-center  z-10 flex flex-wrap w-full bg-[#2F2F31] border border-[#5E5E5E] rounded-2xl sm:py-24 py-16 sm:px-10 px-6 relative ">
                     <Image
                       src={iconsecond}
                       width={100}
@@ -174,7 +228,7 @@ const Page = () => {
                   </div>
                 </div>
                 <div class="px-2 w-1/2">
-                  <div className="text-center  z-10 flex flex-wrap w-full bg-[#2F2F31] rounded-2xl sm:py-24 py-16 sm:px-10 px-6 relative">
+                  <div className="text-center  z-10 flex flex-wrap w-full bg-[#2F2F31] border border-[#5E5E5E] rounded-2xl sm:py-24 py-16 sm:px-10 px-6 relative">
                     <Image
                       src={iconthird}
                       width={100}
@@ -195,7 +249,6 @@ const Page = () => {
           </div>
         </section>
       </div>
-
       {/* shakehand*/}
       <Shakehand />
       {/* pricing cards */}
@@ -208,6 +261,22 @@ const Page = () => {
       <div className="bg-white py-18">
         <div className="bg-white py-24 sm:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className=" flex items-center justify-center">
+              <div className="w-28 mb-2 flex items-center justify-center border border-gray-300 rounded-xl py-2 space-x-2">
+                {/* <!-- Icon --> */}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 text-gray-600"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path d="M13 7a3 3 0 11-6 0 3 3 0 016 0zM9 10a4 4 0 00-4 4v1a1 1 0 001 1h8a1 1 0 001-1v-1a4 4 0 00-4-4zM15.732 10.732a2.5 2.5 0 111.768 4.268 1 1 0 00.5-.866v-1a3 3 0 00-1.732-2.732zM2.5 13.732a2.5 2.5 0 111.768-4.268A3 3 0 002 13v1a1 1 0 00.5.866 2.5 2.5 0 01-.5-.134z" />
+                </svg>
+
+                {/* <!-- Text --> */}
+                <span class="text-gray-600">Clients</span>
+              </div>
+            </div>
             <h2 className="text-center font-bold leading-8 text-gray-900 text-2xl w-[50%] m-auto">
               See What are Clients are Saying
             </h2>
@@ -345,7 +414,6 @@ const Page = () => {
           </button>
         </div>
       </div>
-
       {/* footer section */}
       <Footer />
     </div>
